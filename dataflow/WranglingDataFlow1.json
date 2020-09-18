@@ -1,0 +1,29 @@
+{
+	"name": "WranglingDataFlow1",
+	"properties": {
+		"type": "WranglingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "SourceDataset_rle",
+					"script": "",
+					"dataset": {
+						"referenceName": "SourceDataset_rle",
+						"type": "DatasetReference"
+					}
+				}
+			],
+			"sinks": [
+				{
+					"name": "Sink1",
+					"dataset": {
+						"referenceName": "DestinationDataset_rle",
+						"type": "DatasetReference"
+					},
+					"script": "sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\ttruncate:true,\n\tformat: 'table',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> Sink1"
+				}
+			],
+			"script": "section Section1;\r\nshared SourceDataset_rle = let\r\n  AdfDoc = AzureStorage.BlobContents(\"https://strgaccdatafactdemo.blob.core.windows.net/files/100-contacts.csv\"),\r\n  Csv = Csv.Document(AdfDoc, [Delimiter = \",\", Encoding = TextEncoding.Utf8, QuoteStyle = QuoteStyle.Csv]),\r\n  PromotedHeaders = Table.PromoteHeaders(Csv, [PromoteAllScalars = true])\r\nin\r\n  PromotedHeaders;\r\nshared UserQuery = let\r\n  Source = SourceDataset_rle\r\nin\r\n  Source;\r\n"
+		}
+	}
+}
