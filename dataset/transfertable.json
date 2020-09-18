@@ -1,0 +1,16 @@
+{
+	"name": "transfertable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2viaKV02",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "blobcsvTransferviiaKV"
+		}
+	}
+}
