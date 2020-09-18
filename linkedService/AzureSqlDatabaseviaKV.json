@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlDatabaseviaKV",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SQLConnectionString01"
+			}
+		}
+	}
+}
