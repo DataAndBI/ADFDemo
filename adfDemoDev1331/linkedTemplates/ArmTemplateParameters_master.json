@@ -11,6 +11,15 @@
 		"AzureSqlDatabase1_connectionString": {
 			"value": ""
 		},
+		"AzureBlobStorageviaKV_properties_typeProperties_connectionString_secretName": {
+			"value": "kvblobstorage"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://kv-adfdemo01.vault.azure.net/"
+		},
+		"AzureSqlDatabase2viaKV02_properties_typeProperties_connectionString_secretName": {
+			"value": "SQLConnectionString01"
+		},
 		"containerUri": {
 			"value": ""
 		},
