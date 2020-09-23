@@ -191,7 +191,7 @@
 						"referenceName": "DestinationDataset_rle",
 						"type": "DatasetReference",
 						"parameters": {
-							"Tblname": "@pipeline().parameter.Tblname"
+							"Tblname": "@pipeline().parameters.Tblname"
 						}
 					}
 				]
