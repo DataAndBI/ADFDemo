@@ -5,12 +5,14 @@
 			"referenceName": "AzureSqlDatabase1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"Tblname": {
+				"type": "string",
+				"defaultValue": "dbo.blobcsvtransfer"
+			}
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
-		"typeProperties": {
-			"schema": "dbo",
-			"table": "blobcsvTransfer"
-		}
+		"schema": []
 	}
 }
