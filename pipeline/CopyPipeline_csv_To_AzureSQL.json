@@ -41,10 +41,7 @@
 						}
 					},
 					"sink": {
-						"type": "AzureSqlSink",
-						"preCopyScript": "Truncate table dbo.blobcsvtransfer",
-						"tableOption": "autoCreate",
-						"disableMetricsCollection": false
+						"type": "AzureSqlSink"
 					},
 					"enableStaging": false,
 					"validateDataConsistency": false,
@@ -191,7 +188,7 @@
 						"referenceName": "DestinationDataset_rle",
 						"type": "DatasetReference",
 						"parameters": {
-							"Tblname": "@pipeline().parameters.Tblname"
+							"Tblname": "dbo.blobcsvtransfer"
 						}
 					}
 				]
