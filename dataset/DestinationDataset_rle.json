@@ -13,10 +13,6 @@
 		},
 		"annotations": [],
 		"type": "AzureSqlTable",
-		"schema": [],
-		"typeProperties": {
-			"schema": "dbo",
-			"table": "blobcsvTransfer"
-		}
+		"schema": []
 	}
 }
