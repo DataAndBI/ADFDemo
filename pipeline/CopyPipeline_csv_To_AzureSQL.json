@@ -21,6 +21,10 @@
 					{
 						"name": "Destination",
 						"value": "dbo.blobcsvTransfer"
+					},
+					{
+						"name": "testdemo",
+						"value": "this is without key vault pipelines"
 					}
 				],
 				"typeProperties": {
@@ -187,7 +191,7 @@
 						"referenceName": "DestinationDataset_rle",
 						"type": "DatasetReference",
 						"parameters": {
-							"Tblname": "dbo.blobcsvtransfer"
+							"Tblname": "@pipeline().parameter.Tblname"
 						}
 					}
 				]
