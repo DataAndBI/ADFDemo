@@ -183,7 +183,10 @@
 				"outputs": [
 					{
 						"referenceName": "DestinationDataset_rle",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"Tblname": "dbo.blobcsvtransfer"
+						}
 					}
 				]
 			}
