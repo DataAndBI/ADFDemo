@@ -1,0 +1,13 @@
+{
+	"name": "AzureDataLakeStore1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDataLakeStore",
+		"typeProperties": {
+			"dataLakeStoreUri": "https://adlsaccount.azuredatalakestore.net/webhdfs/v1",
+			"tenant": "7e519438-1d0f-4449-bebf-ff7261b23f65",
+			"subscriptionId": "d407fb02-4bc4-439a-81b1-1af82b0bb049",
+			"resourceGroupName": "datafactoryres-grp"
+		}
+	}
+}
