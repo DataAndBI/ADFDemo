@@ -9,7 +9,7 @@
 		"type": "AzureSqlTable",
 		"schema": [],
 		"typeProperties": {
-			"schema": "parquet_tbl",
+			"schema": "dbo",
 			"table": "Azure Blob Storage file"
 		}
 	}
