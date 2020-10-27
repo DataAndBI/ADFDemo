@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_iys",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "parquet_tbl",
+			"table": "Azure Blob Storage file"
+		}
+	}
+}
