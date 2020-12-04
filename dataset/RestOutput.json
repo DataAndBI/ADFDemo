@@ -1,0 +1,23 @@
+{
+	"name": "RestOutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestAPIADLSGen1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation",
+				"fileName": "output.csv",
+				"folderPath": "RestAPIOutput"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
