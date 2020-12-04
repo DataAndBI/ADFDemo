@@ -2,16 +2,15 @@
 	"name": "RestOutput",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "RestAPIADLSGen1",
+			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureDataLakeStoreLocation",
-				"fileName": "output.csv",
-				"folderPath": "RestAPIOutput"
+				"type": "AzureBlobStorageLocation",
+				"container": "file"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
