@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
-			"url": "https://rapidapi.com/apilayernet/api/rest-countries-v1",
+			"url": "https://rapidapi.com/apilayernet/api/rest-countries-v1?endpoint=53aa5a09e4b051a76d24136a",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
