@@ -1,5 +1,5 @@
 {
-	"name": "AzureDataLakeStore1",
+	"name": "RestAPIADLSGen1",
 	"properties": {
 		"annotations": [],
 		"type": "AzureDataLakeStore",
